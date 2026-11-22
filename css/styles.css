@@ -151,10 +151,11 @@ ol li {
 }
 
 .preview-img {
-    width: 300px;
+    width: 200px;
     height: auto;
     transition: transform 0.25s ease;
-    cursor: zoom-in;
+    /* cursor: zoom-in; */
+    cursor: default;
 }
 
 .preview-img:hover {
@@ -163,3 +164,7 @@ ol li {
     position: relative;
     z-index: 999;
 }
+
+
+
+
