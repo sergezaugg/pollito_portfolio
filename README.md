@@ -1,25 +1,22 @@
 # Personal Portfolio Website
 
-A lightweight, multi-page portfolio website built with plain HTML and CSS.
+A lightweight, multi-page portfolio website built with HTML, CSS, JS.
 
 ## Project Structure
 
 ```text
-.
-├── index.html
-├── styles/
-│   └── styles.css
-├── pages/
-│   ├── stats.html
-│   ├── epi.html
-│   ├── about.html
-│   └── more.html
+├── index.html  # app entry
+├── css/        # styles 
+├── pages/      # page definitions / contents
+├── js/         # re-usable js code
+├── pics/       # static resources
 └── README.md
 ```
 
 ## Technologies
 - HTML5
 - CSS3
+- JavaScript
 
 ## Features
 - Multi-page navigation
