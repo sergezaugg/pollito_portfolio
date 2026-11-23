@@ -7,6 +7,11 @@
     <title>Portfolio</title>
     <link rel="icon" type="image/png" href="../pics/z_logo_blue_mini.png">
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- JavaScript dependencies -->
+    <script src="../js/components.js" defer></script>
+    <script src="../pages/stats.js" defer></script>
+
 </head>
 
 <body>
@@ -14,9 +19,9 @@
         <nav aria-label="Main navigation">
             <div class="nav-title">
                 <img src="../pics/z_logo_blue_mini.png" alt="Logo">
-                S. Zaugg • Data Analytics & Insights
-            </div>   
-            <a href="about.html">About</a>         
+                Serge Zaugg • Data Analytics & Insights
+            </div>
+            <a href="about.html">About</a>
             <a href="stats.html" class="active" aria-current="page">Stats & ML</a>
             <a href="epi.html">Epidemiology</a>
             <a href="more.html">Research</a>
@@ -25,6 +30,7 @@
 
     <main>
         <h3>Interactive Statistics & ML Playgrounds</h3>
+
         <div class="top-text">
             <p>Explore statistics with interactive apps designed to make complex concepts
                 intuitive, accessible, and engaging. From understanding the fundamentals of
@@ -34,98 +40,11 @@
                 engaging way to understand statistical concepts and their real-world implications.
             </p>
         </div>
-        <br>
+
         <hr>
-        <br>
 
-        <li class="project-item">
-            <div class="project-info">
-                <p>Explore fundamental concepts of regression modelings</p>
-                <a href="https://serge-zaugg-jjdd0hpbdapyc.share.connect.posit.cloud/" target="_blank"
-                    rel="noopener noreferrer">
-                    Live Shiny App
-                </a>
-                <br>
-                <a href="https://github.com/sergezaugg/didactic_stats_app" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-                <br>
-            </div>
-            <div class="project-preview">
-                <img src="../pics/screenshot_appl_stats.png" class="preview-img">
-            </div>
-        </li>
-
-        <li class="project-item">
-            <div class="project-info">
-                <p>Explore basic mechanics of mixed models (clustered data)</p>
-                <a href="https://serge-zaugg-pydjbphjadcd0.share.connect.posit.cloud/" target="_blank"
-                    rel="noopener noreferrer">
-                    Live Shiny App
-                </a>
-                <br>
-                <a href="https://github.com/sergezaugg/didactic_randeff_app" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-                <br>
-            </div>
-            <div class="project-preview">
-                <img src="../pics/screenshot_randeff.png" class="preview-img">
-            </div>
-        </li>
-
-        <li class="project-item">
-            <div class="project-info">
-                <p>Underpowered Research Undermines Science</p>
-                <a href="https://serge-zaugg-jbd0hdajdppyc.share.connect.posit.cloud/" target="_blank"
-                    rel="noopener noreferrer">
-                    Live Shiny App
-                </a>
-                <br>
-                <a href="https://github.com/sergezaugg/type_m_error" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-                <br>
-            </div>
-            <div class="project-preview">
-                <img src="../pics/screenshot_underpowered.png" class="preview-img">
-            </div>
-        </li>
-
-        <li class="project-item">
-            <div class="project-info">
-                <p>Machine Learning Performance Metrics</p>
-                <a href="https://ml-performance-metrics.streamlit.app/" target="_blank" rel="noopener noreferrer">
-                    Live Streamlit App
-                </a>
-                <br>
-                <a href="https://github.com/sergezaugg/ml_performance_metrics/" target="_blank"
-                    rel="noopener noreferrer">
-                    GitHub
-                </a>
-                <br>
-            </div>
-            <div class="project-preview">
-                <img src="../pics/screenshot_mlmetrics.png" class="preview-img">
-            </div>
-        </li>
-
-        <li class="project-item">
-            <div class="project-info">
-                <p>Impact of pure-noise-features on predictive performance</p>
-                <a href="https://pure-noise-features.streamlit.app/" target="_blank" rel="noopener noreferrer">
-                    Live Streamlit App
-                </a>
-                <br>
-                <a href="https://github.com/sergezaugg/pure_noise_dashb/" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-                <br>
-            </div>
-            <div class="project-preview">
-                <img src="../pics/screenshot_purenoise.png" class="preview-img">
-            </div>
-        </li>
+        <!-- Container for dynamically generated project entries -->
+        <ul id="projects-container" class="project-list"></ul>
 
     </main>
 </body>
