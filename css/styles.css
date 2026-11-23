@@ -32,9 +32,19 @@ header {
 
 
 
+
+.about-list-el {
+    font-size: 1.3rem;
+    max-width: 850px;
+    margin: 5px 0 5px 0;
+    padding: 0 0px;
+    box-sizing: border-box;
+}
+
+
 .top-text {
     max-width: 850px;
-    margin: 0px 0;
+    margin: 0px 0 20px 0;
     padding: 0 0px;
     box-sizing: border-box;
 }
@@ -186,7 +196,7 @@ ol li {
     grid-template-columns: 1fr 180px;
     align-items: start;
     gap: 20px;
-    margin-bottom: 25px;
+    margin: 15px 0 25px 0;
     position: relative;
     overflow: visible;
 }
@@ -254,7 +264,7 @@ ol li {
 
 /* Project title */
 .project-info h3 {
-    margin: 0 0 10px;
+    margin: 0 0 0px;
     padding: 0;
     color: #23a7e4;
     font-size: 1.15rem;
@@ -265,7 +275,7 @@ ol li {
 .project-description {
     width: 100%;
     max-width: 600px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     text-align: left;
 }
 

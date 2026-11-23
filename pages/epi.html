@@ -7,6 +7,11 @@
     <title>Portfolio</title>
     <link rel="icon" type="image/png" href="../pics/z_logo_blue_mini.png">
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- JavaScript dependencies -->
+    <script src="../js/components.js" defer></script>
+    <script src="../pages/epi.js" defer></script>
+
 </head>
 
 <body>
@@ -35,70 +40,11 @@
                 explore and interpret.
             </p>
         </div>
-        <br>
+       
         <hr>
-        <br>
 
-        <li class="project-item">
-            <div class="project-info">
-                <p>Explore global Influenza detections using data from WHO FluNet </p>
-                <a href="https://flunet-explorer.streamlit.app/" target="_blank" rel="noopener noreferrer">
-                    Live Streamlit App
-                </a>
-                <br>
-                <a href="https://github.com/sergezaugg/10_flunet_dashboard" target="_blank"
-                    rel="noopener noreferrer">
-                    GitHub
-                </a>
-                <br>
-            </div>
-            <div class="project-preview">
-                <img src="../pics/screenshot_glo_inf_expl.png" class="preview-img">
-            </div>
-        </li>
-
-
-        <!-- bbb -->
-        <li class="project-item">
-            <div class="project-info">
-                <p>Explore Swiss Influenza detections using data from FOPH</p>
-                <a href="https://ch-flu-explorer.streamlit.app/" target="_blank" rel="noopener noreferrer">
-                    Live Streamlit App
-                </a>
-                <br>
-                <a href="https://github.com/sergezaugg/infectious_desease_mon" target="_blank"
-                    rel="noopener noreferrer">
-                    GitHub
-                </a>
-                <br>
-            </div>
-            <div class="project-preview">
-                <img src="../pics/screenshot_sw_infl_mon.png" class="preview-img">
-            </div>
-        </li>
-
-
-        <!-- bbb -->
-        <li class="project-item">
-            <div class="project-info">
-                <p>Explore detections of multiple disease using data from FOPH</p>
-                <a href="https://swiss-infectious-disease-explorer.streamlit.app/" target="_blank" rel="noopener noreferrer">
-                    Live Streamlit App
-                </a>
-                <br>
-                <a href="https://github.com/sergezaugg/12_infectious_desease_ch/" target="_blank"
-                    rel="noopener noreferrer">
-                    GitHub
-                </a>
-                <br>
-            </div>
-            <div class="project-preview">
-                <img src="../pics/screenshot_swi_epi.png" class="preview-img">
-            </div>
-        </li>
-
-
-
+        <!-- Container for dynamically generated project entries -->
+        <ul id="projects-container" class="project-list"></ul>
 
     </main>
 </body>
