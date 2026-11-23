@@ -29,7 +29,7 @@ projects.append(
 
     // Random Effects / Mixed Models
     createProject(
-        "Random Effects Models",
+        "Random Effects Playground",
         `
         Explore the basic mechanics of mixed models and clustered data.
         `,
