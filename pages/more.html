@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More</title>
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="../pics/z_logo_blue_mini.png">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <header>
         <nav aria-label="Main navigation">
+            <div class="nav-title">
+                <img src="../pics/z_logo_blue_mini.png" alt="Logo">
+                S. Zaugg • Data Analytics & Insights
+            </div>
+            <a href="about.html">About</a>
             <a href="stats.html">Stats & ML</a>
             <a href="epi.html">Epidemiology</a>
-            <a href="about.html">About</a>
-            <a href="more.html" class="active" aria-current="page">More</a>
+            <a href="more.html" class="active" aria-current="page">Research</a>
         </nav>
     </header>
 
     <main>
-        <h1>More</h1>
-        <!-- Add page content here -->
+        <h3>Research Contributions & Methodological Support</h3>
+
+        <div class="top-text">
+            <p>As data scientist and statistician I have contributed to many research projects. 
+            My role often involved supporting other researchers and leading the technical and data science workflows. 
+            Some Project with a publicly visible output are listed below.
+            </p>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <!-- load javascript pages   -->
+        <ul id="projects-container" class="project-list"></ul>
+        <script src="../js/components.js" defer></script>
+        <script src="../pages/more.js" defer></script>
+
     </main>
 </body>
+
 </html>
