@@ -30,17 +30,13 @@ header {
     padding: 16px 24px;
 }
 
-
-
-
 .about-list-el {
     font-size: 1.3rem;
     max-width: 850px;
-    margin: 5px 0 5px 0;
+    margin: 15px 0 5px 0;
     padding: 0 0px;
     box-sizing: border-box;
 }
-
 
 .top-text {
     max-width: 850px;

@@ -43,7 +43,7 @@
     padding: 18px;
     background: #161c25;
     border: 1px solid #303946;
-    border-top: 3px solid #3986c8;
+    border-top: 1px solid #3986c8;
     border-radius: 10px;
 
     transition:
@@ -118,36 +118,6 @@
     border-color: #3986c8;
     color: #ffffff;
 }
-
-
-/* ========================================
-   CATEGORY ACCENTS
-   ======================================== */
-
-.statistics {
-    border-top-color: #9270c5;
-}
-
-.datascience {
-    border-top-color: #9270c5;
-}
-
-.programming {
-    border-top-color: #9270c5;
-}
-
-.applications {
-    border-top-color: #9270c5;
-}
-
-.visualisation {
-    border-top-color: #9270c5;
-}
-
-.dataengineering {
-    border-top-color: #9270c5;
-}
-
 
 /* ========================================
    RESPONSIVE LAYOUT
