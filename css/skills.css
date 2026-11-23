@@ -1,0 +1,156 @@
+
+/* ========================================
+   SKILLS SECTION
+   ======================================== */
+
+.skills-section {
+    width: 100%;
+    margin: 35px 0 60px 0;
+}
+
+.skills-heading {
+    margin-bottom: 22px;
+}
+
+.skills-heading h2 {
+    margin-bottom: 8px;
+}
+
+.skills-heading p {
+    color: #a0aab8;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   GRID LAYOUT
+   ======================================== */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 35px;
+}
+
+
+/* ========================================
+   SKILL CARDS
+   ======================================== */
+
+.skill-card {
+    min-width: 0;
+    padding: 18px;
+    background: #161c25;
+    border: 1px solid #303946;
+    border-top: 1px solid #3986c8;
+    border-radius: 10px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-2px);
+    border-color: #3986c8;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.22);
+}
+
+
+/* ========================================
+   CARD HEADINGS
+   ======================================== */
+
+.skill-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.skill-title h3 {
+    margin: 0;
+    color: #e6edf5;
+    font-size: 0.98rem;
+    line-height: 1.4;
+}
+
+.skill-icon {
+    flex-shrink: 0;
+    color: #4da3e6;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   SKILL TAGS
+   ======================================== */
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.skill-tags span {
+    display: inline-block;
+    padding: 5px 9px;
+
+    background: #202a36;
+    border: 1px solid #303e4e;
+    border-radius: 5px;
+
+    color: #c4d2e0;
+    font-size: 0.78rem;
+    line-height: 1.4;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.skill-tags span:hover {
+    background: #263d53;
+    border-color: #3986c8;
+    color: #ffffff;
+}
+
+/* ========================================
+   RESPONSIVE LAYOUT
+   ======================================== */
+
+@media (max-width: 850px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 16px;
+    }
+}
+
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .skill-card,
+    .skill-tags span {
+        transition: none;
+    }
+
+    .skill-card:hover {
+        transform: none;
+    }
+}
