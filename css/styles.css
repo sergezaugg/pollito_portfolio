@@ -29,6 +29,20 @@ header {
 }
 
 
+
+.top-text {
+    max-width: 850px;
+    margin: 0px 0;
+    padding: 0 0px;
+    box-sizing: border-box;
+}
+
+.top-text p {
+    line-height: 1.4;
+    text-align: left;
+}
+
+
 /* Left-side title */
 .nav-title {
     font-size: 1.3rem;
@@ -38,6 +52,22 @@ header {
     margin-right: 15px;
     margin-left: 0px;
     padding-top: 6px;
+}
+
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.nav-title img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+     display: block;
 }
 
 /* overall app dims */
