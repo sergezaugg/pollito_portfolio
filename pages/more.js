@@ -1,3 +1,6 @@
+// --------------------------------
+// contents of page more
+// --------------------------------
 
 
 const projects = document.getElementById("projects-container");
