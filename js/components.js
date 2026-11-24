@@ -27,6 +27,9 @@ function createProject(title, description, links, image) {
     info.appendChild(descriptionBox);
 
     // Project links
+    const linksBox = document.createElement("div");
+    linksBox.className = "project-links";
+
     links.forEach((link) => {
 
         const anchor = document.createElement("a");
@@ -38,9 +41,10 @@ function createProject(title, description, links, image) {
             anchor.rel = "noopener noreferrer";
         }
 
-        info.appendChild(anchor);
-        info.appendChild(document.createElement("br"));
+        linksBox.appendChild(anchor);
     });
+
+    info.appendChild(linksBox);
 
     // Project preview
     const preview = document.createElement("div");
