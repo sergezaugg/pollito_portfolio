@@ -93,13 +93,44 @@ projects.append(
 
     createProject(
 
+        "Marine Bioacoutics - Cetacean Monitoring",
+
+        `
+        Over several years, I collaborated to applied acoustic research by developing several 
+        data pipelines (ML and later DL) to process large volumes of marine acoustic data, with a special focus on whales and dolphins. 
+        This work contributed to both ecological research and applied environmental impact assessments (marine construction sites).
+        `,
+
+        [
+            {
+                text: "Methods Article I",
+                url: "https://pubs.aip.org/asa/jasa/article-abstract/133/2/902/629588/Extraction-of-pulse-repetition-intervals-from?redirectedFrom=fulltext",
+                external: true
+            },
+            {
+                text: "Methods Article II",
+                url: "https://www.sciencedirect.com/science/article/abs/pii/S0003682X1000112X",
+                external: true
+            },
+            {
+                text: "More on G-scholar",
+                url: "https://scholar.google.com/citations?user=knRLdEUAAAAJ&hl",
+                external: true
+            },
+        ],
+        "../pics/sperm_whale.png"   
+    ),
+
+
+    createProject(
+
         "Bird Monitoring with Radar",
 
         `
-        Early in my career, I supported researchers and conservation professionals in developing analytical 
+        In my early career, I supported researchers and conservation professionals in developing analytical 
         methods to process large volumes of radar data, identify bird signatures and quantify migration 
         patterns over extended periods. This work involved close collaboration with domain specialists 
-        and contributed to both ecological research and applied environmental impact assessments.
+        and contributed to both ecological research and applied environmental impact assessments (windfarms).
         `,
 
         [
@@ -116,6 +147,7 @@ projects.append(
         ],
         "../pics/screenshot_radar.png"
     ),
+
 
 
 
