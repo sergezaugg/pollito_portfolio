@@ -300,3 +300,30 @@ ol li {
 
 
 
+
+
+
+
+
+
+/* new */
+
+
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.project-links a {
+    display: block;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
