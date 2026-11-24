@@ -26,50 +26,25 @@ function createProject(title, description, links, image) {
     descriptionBox.appendChild(paragraph);
     info.appendChild(descriptionBox);
 
-    // // Project links
-    // links.forEach((link) => {
+    // Project links
+    const linksBox = document.createElement("div");
+    linksBox.className = "project-links";
 
-    //     const anchor = document.createElement("a");
-    //     anchor.href = link.url;
-    //     anchor.textContent = link.text;
+    links.forEach((link) => {
 
-    //     if (link.external) {
-    //         anchor.target = "_blank";
-    //         anchor.rel = "noopener noreferrer";
-    //     }
+        const anchor = document.createElement("a");
+        anchor.href = link.url;
+        anchor.textContent = link.text;
 
-    //     info.appendChild(anchor);
-    //     info.appendChild(document.createElement("br"));
-    // });
+        if (link.external) {
+            anchor.target = "_blank";
+            anchor.rel = "noopener noreferrer";
+        }
 
+        linksBox.appendChild(anchor);
+    });
 
-// Project links
-const linksBox = document.createElement("div");
-linksBox.className = "project-links";
-
-links.forEach((link) => {
-
-    const anchor = document.createElement("a");
-    anchor.href = link.url;
-    anchor.textContent = link.text;
-
-    if (link.external) {
-        anchor.target = "_blank";
-        anchor.rel = "noopener noreferrer";
-    }
-
-    linksBox.appendChild(anchor);
-});
-
-info.appendChild(linksBox);
-
-
-
-
-
-
-
-
+    info.appendChild(linksBox);
 
     // Project preview
     const preview = document.createElement("div");
