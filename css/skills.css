@@ -42,8 +42,8 @@
     min-width: 0;
     padding: 18px;
     background: #161c25;
-    border: 1px solid #303946;
-    border-top: 1px solid #3986c8;
+    border: 1px solid var(--border);
+    border-top: 1px solid var(--accent);
     border-radius: 10px;
 
     transition:
@@ -53,9 +53,9 @@
 }
 
 .skill-card:hover {
-    transform: translateY(-2px);
-    border-color: #3986c8;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.22);
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 5px 5px var(--hover-effect);
 }
 
 
@@ -79,7 +79,7 @@
 
 .skill-icon {
     flex-shrink: 0;
-    color: #4da3e6;
+    color: var(--accent);
     font-size: 1.3rem;
     font-weight: 700;
 }
