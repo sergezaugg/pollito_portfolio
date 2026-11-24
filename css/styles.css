@@ -222,12 +222,13 @@ ol li {
     width: 200px;
     height: auto;
     transition: transform 0.25s ease;
-    /* cursor: zoom-in; */
     cursor: default;
+    border: 2px solid var(--accent);
+    border-radius: 6px;
 }
 
 .preview-img:hover {
-    transform: scale(2.5);
+    transform: scale(2.0);
     /* transform-origin: top right; */
     position: relative;
     z-index: 999;

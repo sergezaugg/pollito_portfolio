@@ -55,9 +55,21 @@ function createProject(title, description, links, image) {
     img.className = "preview-img";
     img.alt = title;
 
-    preview.appendChild(img);
+    // Make image clickable, opening the first link in a new tab
+    const imageLink = document.createElement("a");
+    imageLink.href = links[0].url;
+    imageLink.target = "_blank";
+    imageLink.rel = "noopener noreferrer";
+
+    imageLink.appendChild(img);
+    preview.appendChild(imageLink);
 
     item.append(info, preview);
 
     return item;
+
+
+
+
+
 }
