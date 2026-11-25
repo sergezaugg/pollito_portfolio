@@ -2,7 +2,6 @@
 // contents of page more
 // --------------------------------
 
-
 const projects = document.getElementById("projects-container");
 
 projects.append(
@@ -34,7 +33,6 @@ projects.append(
         "../pics/peat.png"
     ),
 
-
     createProject(
 
         "Project Providence - Ecological Monitoring",
@@ -63,8 +61,6 @@ projects.append(
         "../pics/providence.png"
     ),
 
-
-
     createProject(
 
         "Cardiology & Intracoronary Imaging",
@@ -89,7 +85,6 @@ projects.append(
         ],
         "../pics/screenshot_cardio_small.png"
     ),
-
 
     createProject(
 
@@ -121,7 +116,6 @@ projects.append(
         "../pics/sperm_whale.png"   
     ),
 
-
     createProject(
 
         "Bird Monitoring with Radar",
@@ -147,10 +141,6 @@ projects.append(
         ],
         "../pics/screenshot_radar.png"
     ),
-
-
-
-
 
 );
 

@@ -43,7 +43,11 @@ body {
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-header {
+header { 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     min-width: 100%;
     width: max-content;
     background: var(--surface);
