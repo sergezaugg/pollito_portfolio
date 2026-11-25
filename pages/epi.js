@@ -1,5 +1,5 @@
 // --------------------------------
-// contents of page more
+// contents of page epi
 // --------------------------------
 
 const projects = document.getElementById("projects-container");
