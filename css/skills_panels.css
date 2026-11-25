@@ -1,11 +1,10 @@
-
-/* ========================================
-   SKILLS SECTION
-   ======================================== */
+/* =========================================
+   2. Skills section
+========================================= */
 
 .skills-section {
     width: 100%;
-    margin: 35px 0 60px 0;
+    margin: 35px 0 60px;
 }
 
 .skills-heading {
@@ -17,14 +16,14 @@
 }
 
 .skills-heading p {
-    color: #a0aab8;
+    color: var(--skill-heading-muted);
     line-height: 1.6;
 }
 
 
-/* ========================================
-   GRID LAYOUT
-   ======================================== */
+/* =========================================
+   3. Skills grid
+========================================= */
 
 .skills-grid {
     display: grid;
@@ -34,14 +33,15 @@
 }
 
 
-/* ========================================
-   SKILL CARDS
-   ======================================== */
+/* =========================================
+   4. Skill cards
+========================================= */
 
 .skill-card {
     min-width: 0;
     padding: 18px;
-    background: #161c25;
+
+    background: var(--bg);
     border: 1px solid var(--border);
     border-top: 1px solid var(--accent);
     border-radius: 10px;
@@ -59,9 +59,9 @@
 }
 
 
-/* ========================================
-   CARD HEADINGS
-   ======================================== */
+/* =========================================
+   5. Card headings & icons
+========================================= */
 
 .skill-title {
     display: flex;
@@ -72,7 +72,7 @@
 
 .skill-title h3 {
     margin: 0;
-    color: #e6edf5;
+    color: var(--text);
     font-size: 0.98rem;
     line-height: 1.4;
 }
@@ -85,9 +85,9 @@
 }
 
 
-/* ========================================
-   SKILL TAGS
-   ======================================== */
+/* =========================================
+   6. Skill tags
+========================================= */
 
 .skill-tags {
     display: flex;
@@ -99,11 +99,11 @@
     display: inline-block;
     padding: 5px 9px;
 
-    background: #202a36;
-    border: 1px solid #303e4e;
+    background: var(--skill-tag-bg);
+    border: 1px solid var(--skill-tag-border);
     border-radius: 5px;
 
-    color: #c4d2e0;
+    color: var(--text);
     font-size: 0.78rem;
     line-height: 1.4;
 
@@ -114,14 +114,15 @@
 }
 
 .skill-tags span:hover {
-    background: #263d53;
-    border-color: #3986c8;
-    color: #ffffff;
+    background: var(--skill-tag-hover-bg);
+    border-color: var(--skill-tag-hover-border);
+    color: var(--skill-tag-hover-text);
 }
 
-/* ========================================
-   RESPONSIVE LAYOUT
-   ======================================== */
+
+/* =========================================
+   7. Responsive layout
+========================================= */
 
 @media (max-width: 850px) {
     .skills-grid {
@@ -140,11 +141,12 @@
 }
 
 
-/* ========================================
-   ACCESSIBILITY
-   ======================================== */
+/* =========================================
+   8. Accessibility
+========================================= */
 
 @media (prefers-reduced-motion: reduce) {
+
     .skill-card,
     .skill-tags span {
         transition: none;
