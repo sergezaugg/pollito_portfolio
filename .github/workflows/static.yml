@@ -8,10 +8,15 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      version:
+        description: "Version tag (e.g. v1.0.0). Leave empty for automatic patch increment."
+        required: false
+        type: string
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -41,3 +46,24 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+      - name: Create version tag
+        run: |
+          git fetch --tags
+
+          VERSION="${{ inputs.version }}"
+
+          if [ -z "$VERSION" ]; then
+            LATEST=$(git tag -l 'v*' --sort=-v:refname | head -n 1)
+
+            MAJOR=$(echo "$LATEST" | cut -d. -f1)
+            MINOR=$(echo "$LATEST" | cut -d. -f2)
+            PATCH=$(echo "$LATEST" | cut -d. -f3)
+
+            VERSION="${MAJOR}.${MINOR}.$((PATCH + 1))"
+          fi
+
+          git tag "$VERSION" "$GITHUB_SHA"
+          git push origin "$VERSION"
+          
+          
