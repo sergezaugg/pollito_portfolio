@@ -22,6 +22,11 @@ projects.append(
                 text: "GitHub",
                 url: "https://github.com/sergezaugg/didactic_stats_app",
                 external: true
+            },
+            {
+                text: "Docker Images",
+                url: "https://hub.docker.com/r/sergezaugg/didactic-stats-app",
+                external: true
             }
         ],
         "../pics/screenshot_appl_stats.png"
@@ -43,7 +48,12 @@ projects.append(
                 text: "GitHub",
                 url: "https://github.com/sergezaugg/didactic_randeff_app",
                 external: true
-            }
+            },
+            {
+                text: "Docker Images",
+                url: "https://hub.docker.com/r/sergezaugg/didactic-randeff-app",
+                external: true
+            },
         ],
         "../pics/screenshot_randeff.png"
     ),
@@ -64,7 +74,13 @@ projects.append(
                 text: "GitHub",
                 url: "https://github.com/sergezaugg/type_m_error",
                 external: true
-            }
+            },
+            {
+                text: "Docker Images",
+                url: "https://hub.docker.com/r/sergezaugg/type-m-error",
+                external: true
+            },
+
         ],
         "../pics/screenshot_underpowered.png"
     ),
