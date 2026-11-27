@@ -48,7 +48,12 @@ projects.append(
                 text: "GitHub",
                 url: "https://github.com/sergezaugg/didactic_randeff_app",
                 external: true
-            }
+            },
+            {
+                text: "Docker Images",
+                url: "https://hub.docker.com/r/sergezaugg/didactic-randeff-app",
+                external: true
+            },
         ],
         "../pics/screenshot_randeff.png"
     ),
