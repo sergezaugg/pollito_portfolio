@@ -101,7 +101,12 @@ projects.append(
                 text: "GitHub",
                 url: "https://github.com/sergezaugg/ml_performance_metrics/",
                 external: true
-            }
+            },
+            {
+                text: "Docker Images",
+                url: "https://hub.docker.com/r/sergezaugg/ml-perf-met",
+                external: true
+            },
         ],
         "../pics/screenshot_mlmetrics.png"
     ),
